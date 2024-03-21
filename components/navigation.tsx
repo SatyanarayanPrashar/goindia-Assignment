@@ -47,7 +47,7 @@ export const Navigation = () => {
                 "left",
                 isMobile ? "100%" : `${sidebarWidth}px`
             );
-            setTimeout(() => setIsResetting(false), 300);
+            setTimeout(() => setIsResetting(false), 500);
         }
     };
 
@@ -59,15 +59,18 @@ export const Navigation = () => {
             sidebarRef.current.style.width = "0";
             navbarRef.current.style.setProperty("width", "100%");
             navbarRef.current.style.setProperty("left", "0");
-            setTimeout(() => setIsResetting(false), 300);
+            setTimeout(() => setIsResetting(false), 500);
         }
     };
 
     return (
-        <div className={isMobile ? "h-full absolute left-0 z-[999999999999]" : ""}>
+        <div className={isMobile ? "h-full absolute left-0 z-[99999]" : ""}>
             <aside
                 ref={sidebarRef}
-                className="h-full bg-[#1E3A61] overflow-y-auto relative flex w-[280px] flex-col z-[99999] "
+                className={cn(
+                    'h-full bg-[#1E3A61] overflow-y-auto relative flex flex-col z-[99999]',
+                    isResetting && 'transition-width duration-1000'
+                )}
             >
                 <div
                     role="button"
@@ -117,9 +120,9 @@ export const Navigation = () => {
             <div 
                 ref={navbarRef}
                 className={cn(
-                    "absolute h-[50px] top-[45%] z-[99999] left-0 w-[20px]",
-                    isResetting && "transition-all ease-in-out duration-30",
-                    isMobile && "left-0 w-full"
+                    'absolute h-[50px] top-[45%] z-[99999] left-0 w-[20px]',
+                    isResetting && 'transition-all ease-in-out duration-500',
+                    isMobile && 'left-0 w-full'
                 )}
             >
                 <div className="bg-transparent px-0 py-2 w-full">
