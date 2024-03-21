@@ -2,7 +2,7 @@
 
 export const MarketStoryTile = ( ) => {
     return (
-        <div className="flex flex-col border rounded-sm justify-center">
+        <div className="flex flex-col border rounded-sm justify-center mb-[25px]">
            <div className="w-[220px]">
                 <img  
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPr1tQMjJdgDqD4ye9zFVDUJP3DYkxIHrNXq0zXVDpdg&s"

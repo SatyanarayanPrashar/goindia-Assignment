@@ -4,7 +4,7 @@ import { CommentOutlined, FavoriteBorder, Share, Visibility } from "@mui/icons-m
 
 export const ForumTile = ( ) => {
     return (
-        <div className="border rounded-sm max-w-[50rem] p-3 mb-[25px] justify-center shadow-[4.0px_2.0px_8.0px_rgba(0,0,0,0.18)]">
+        <div className="border rounded-sm max-w-[50rem] p-3 mb-[25px] mx-[7px] justify-center shadow-[4.0px_2.0px_8.0px_rgba(0,0,0,0.18)]">
             <div className="flex">
                 <div className="w-[50px]">
                         <img  
@@ -16,7 +16,7 @@ export const ForumTile = ( ) => {
                 <div className="ml-[10px]">
                     <div className="flex h-[50px] lg:w-[42rem] md:w-[20rem] sm:w-[10rem] justify-between items-center">
                         <div className="flex gap-3">
-                            <p className="font-[600]">Satyanarayan Prashar</p>
+                            <p className="font-[600]">Satya</p>
                             <div className="h-[25px] bg-[#1E3A61] rounded-xl text-white px-3 text-[14px] flex items-center">Sector 2</div>
                         </div>
                         <p className="text-[blue] text-[14px]">2 min ago</p>
