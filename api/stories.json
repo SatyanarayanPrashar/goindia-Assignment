@@ -1,0 +1,16 @@
+{
+    "stories": [
+        {
+            "title": "The coldest Sunset",
+            "desc": "Lorem ipsum  commodi aspernatur ullam Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis iste optio quidem, commodi aspernatur ullam?"
+        },
+        {
+            "title": "The Hotest Moon",
+            "desc": " Officiis iste optio quidem, commodi aspernatur ullam Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis iste optio quidem, commodi aspernatur ullam?"
+        },
+        {
+            "title": "The coldest Sunset",
+            "desc": "Lorem ipsum dolipisicing elit. Officiis iste optio quidem, commodi aspernatur ullam Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis iste optio quidem, commodi aspernatur ullam?"
+        }
+    ]
+}

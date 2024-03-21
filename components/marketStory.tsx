@@ -1,7 +1,12 @@
 "use client"
 import { useMediaQuery } from "usehooks-ts";
 
-export const MarketStoryTile = ( ) => {
+interface Story {
+    title: string | null;
+    desc: string | null;
+}
+
+export const MarketStoryTile = ( {story}:{story: Story} ) => {
     const isMobile = useMediaQuery("(max-width: 768px)");
 
     return (
@@ -14,8 +19,8 @@ export const MarketStoryTile = ( ) => {
             />
             </div>
             <div className="p-3">
-                <p className="text-[15px] font-[600]">The coldest Sunset</p>
-                <p className="text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repudiandae omnis sequi nisi et aspernatur sapiente consectetur amet unde quod?</p>
+                <p className="text-[15px] font-[600]">{story.title}</p>
+                <p className="text-[14px]">{story.desc}</p>
             </div>
         </div>
     )

@@ -5,6 +5,8 @@ import { MarketStoryTile } from "@/components/marketStory";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
 import { useMediaQuery } from "usehooks-ts";
+import data from "@/api/data.json";
+import storydata from "@/api/stories.json";
 
 const MarketingPage = () => {
   const isMobile = useMediaQuery("(max-width: 768px)");
@@ -38,13 +40,17 @@ const MarketingPage = () => {
           isMobile ? activeTab=="disscussion" ? "flex" : "hidden" : "flex flex-col"
         }>
           <p className={isMobile ? "hidden" : "text-[red] text-[20px] ml-[5px]"}>DISSCUSSION FOURAM</p>
-          <ForumTile />
+          {data.queries.map((query, i)=>(
+            <ForumTile query={query} />
+          ))}
         </div>
         <div className={
           isMobile ? activeTab=="market" ? "flex" : "hidden" : "flex flex-col"
         }>
           <p className={isMobile ? "hidden" : "text-[red] text-[20px] ml-[5px]"}>MARKET STORIES</p>
-          <MarketStoryTile />
+          {storydata.stories.map((story, i)=>(
+            <MarketStoryTile story={story}/>
+          ))}
         </div>
       </div>
     </div>
