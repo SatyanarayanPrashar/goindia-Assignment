@@ -1,8 +1,8 @@
 "use client"
 
 import { cn } from "@/lib/utils";
-import { AccountCircle, ArrowBackIos, ArrowDropDown, ArrowForwardIos, ChatBubble, NotificationAdd, NotificationImportant, NotificationsActive} from "@mui/icons-material";
-import { ArrowLeft, ArrowRight, CircleDollarSign, MenuIcon  } from "lucide-react"
+import { AccountCircle, ArrowBackIos, ArrowDropDown, ArrowForwardIos, ChatBubble, NotificationsActive} from "@mui/icons-material";
+import { CircleDollarSign } from "lucide-react"
 import { usePathname } from "next/navigation";
 import { ElementRef, useEffect, useRef, useState } from "react";
 
@@ -64,10 +64,10 @@ export const Navigation = () => {
     };
 
     return (
-        <>
+        <div className={isMobile ? "h-full absolute left-0 z-[999999999999]" : ""}>
             <aside
                 ref={sidebarRef}
-                className="h-full bg-[#1E3A61] overflow-y-auto relative flex w-[280px] flex-col z-[9999] "
+                className="h-full bg-[#1E3A61] overflow-y-auto relative flex w-[280px] flex-col z-[99999] "
             >
                 <div
                     role="button"
@@ -125,8 +125,7 @@ export const Navigation = () => {
                 <div className="bg-transparent px-0 py-2 w-full">
                     {isCollapsed && <ArrowForwardIos onClick={resetWidth} role="button" className="h-[50px] w-[20px] text-muted-foreground bg-[#1E3A61] text-white" />}
                 </div>
-                    
             </div>
-        </>
+        </div>
     )
 }

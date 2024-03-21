@@ -37,7 +37,7 @@ const MarketingPage = () => {
         isMobile && "mt-[6rem]"
       )}>
         <div className={
-          isMobile ? activeTab=="disscussion" ? "flex" : "hidden" : "flex flex-col"
+          isMobile ? activeTab=="disscussion" ? "flex flex-col" : "hidden" : "flex flex-col"
         }>
           <p className={isMobile ? "hidden" : "text-[red] text-[20px] ml-[5px]"}>DISSCUSSION FOURAM</p>
           {data.queries.map((query, i)=>(
@@ -45,7 +45,7 @@ const MarketingPage = () => {
           ))}
         </div>
         <div className={
-          isMobile ? activeTab=="market" ? "flex" : "hidden" : "flex flex-col"
+          isMobile ? activeTab=="market" ? "flex flex-col" : "hidden" : "flex flex-col"
         }>
           <p className={isMobile ? "hidden" : "text-[red] text-[20px] ml-[5px]"}>MARKET STORIES</p>
           {storydata.stories.map((story, i)=>(

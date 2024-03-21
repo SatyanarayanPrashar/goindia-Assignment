@@ -17,11 +17,11 @@ export const ForumTile = ( {query} : {query: Query} ) => {
         <div className="border rounded-sm max-w-[50rem] p-3 mb-[25px] mx-[7px] justify-center shadow-[4.0px_2.0px_8.0px_rgba(0,0,0,0.18)]">
             <div className="flex">
                 <div className="w-[50px]">
-                        <img  
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfdpsO7bCr_BQtPvuwa58mo9hCZ5ebZqhVow&usqp=CAU"
-                        alt="" 
-                        className="border-[2px] rounded-[999px] w-[50px] h-[50px]"
-                        />
+                    <img  
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfdpsO7bCr_BQtPvuwa58mo9hCZ5ebZqhVow&usqp=CAU"
+                    alt="" 
+                    className="border-[2px] rounded-[999px] w-[50px] h-[50px]"
+                    />
                 </div>
                 <div className="ml-[10px]">
                     <div className="flex h-[50px] lg:w-[42rem] md:w-[20rem] sm:w-[10rem] justify-between items-center">
