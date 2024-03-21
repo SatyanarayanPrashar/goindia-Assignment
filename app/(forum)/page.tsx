@@ -39,7 +39,7 @@ const MarketingPage = () => {
         <div className={
           isMobile ? activeTab=="disscussion" ? "flex flex-col" : "hidden" : "flex flex-col"
         }>
-          <p className={isMobile ? "hidden" : "text-[red] text-[20px] ml-[5px]"}>DISSCUSSION FOURAM</p>
+          <p className={isMobile ? "hidden" : "text-[red] text-[20px] ml-[5px]"}>DISSCUSSION Fourm</p>
           {data.queries.map((query, i)=>(
             <ForumTile query={query} />
           ))}
