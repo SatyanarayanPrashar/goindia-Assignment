@@ -31,17 +31,19 @@ const MarketingPage = () => {
         </div>
       </div>
       <div className={cn(
-        "min-h-full lg:flex md:block sm:block justify-center gap-10 lg:mt-[5rem] sm:mt-[7rem]",
+        "min-h-full lg:flex md:block sm:block justify-center gap-10 mt-7",
         isMobile && "mt-[6rem]"
       )}>
         <div className={
           isMobile ? activeTab=="disscussion" ? "flex" : "hidden" : "flex flex-col"
         }>
+          <p className={isMobile ? "hidden" : "text-[red] text-[20px] ml-[5px]"}>DISSCUSSION FOURAM</p>
           <ForumTile />
         </div>
         <div className={
           isMobile ? activeTab=="market" ? "flex" : "hidden" : "flex flex-col"
         }>
+          <p className={isMobile ? "hidden" : "text-[red] text-[20px] ml-[5px]"}>MARKET STORIES</p>
           <MarketStoryTile />
         </div>
       </div>
